@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>코드</title>
+<body style="font-family:sans-serif;padding:20px">
+<h2>아래 코드를 복사해서 봇에게 붙여넣어 주세요</h2>
+<div id="c" style="font-size:22px;word-break:break-all;border:2px solid #333;padding:12px;font-family:monospace"></div>
+<button id="b" style="font-size:24px;margin-top:16px;padding:12px 24px">복사</button>
+<p style="color:#888">코드는 몇 분 뒤 만료돼요. 바로 붙여넣어 주세요.</p>
+<script>var p=new URLSearchParams(location.search),c=p.get("code")||("오류: "+(p.get("error_description")||p.get("error")||"코드가 없어요"));
+document.getElementById("c").textContent=c;
+document.getElementById("b").onclick=function(){navigator.clipboard.writeText(c).then(()=>{this.textContent="복사됨 ✓"})};</script>

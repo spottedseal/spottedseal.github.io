@@ -1,0 +1,4 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Tesla 연결</title>
+<p style="font-size:20px">테슬라 로그인 화면으로 이동 중...</p>
+<script>var s=Array.from(crypto.getRandomValues(new Uint8Array(12)),b=>b.toString(16).padStart(2,'0')).join('');
+location.replace("https://auth.tesla.com/oauth2/v3/authorize?response_type=code&client_id=fb55f859-6d11-4791-bd62-cb83bbf9477c&redirect_uri=https%3A%2F%2Fspottedseal.github.io%2Fcallback%2F&scope=openid%20offline_access%20vehicle_device_data%20vehicle_cmds&locale=ko-KR&state="+s);</script>
